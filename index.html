@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>Dog Breed</title>
+    <style>
+        h1 {text-align: center}
+    </style>
+</head>
+<body>
+    <h1>Know Your Dog</h1>
+    <div id="Banner">
+        <div class="inline">
+                <img  src="images/n02088364_1128.jpg" data-image-width="100" >
+                <img  src="images/n02107683_275.jpg" data-image-width="100" align=right >
+                
+        </div>
+    </div>
+    <h2>Beagle</h2>   
+    <h2 align=right>Bernese Mountain Dog</h2>
+    <div id="Banner">
+        <div class="inline">
+                <img src="images/n02107142_814.jpg" alt="" data-image-width="345" data-image-height="500">
+                
+            
+                <img src="images/n02099712_3197.jpg" alt="" data-image-width="500" data-image-height="497" align=right>
+                
+                
+        </div>
+    </div>
+    <h2 >Doberman</h2>
+    <h2 align=right>Labrador Retriever</h2>
+    
+    <div id="Banner">
+        <div class="inline">
+               
+                 <img src="images/n02110185_712.jpg"  data-image-width="500" >
+
+        </div>
+    </div>
+   
+    <h2>Husky</h2>
+                
+     
+               
+      <div class="container">
+  <br><br>
+  <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Upload Your Image :</label>
+      <div class="col-sm-10">          
+        <input type="file" class="form-control" placeholder="Hours Studied"  name="my_image" id="pwd">
+      </div>
+    </div>
+
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+  </form>
+
+	{% if prediction %}
+  <img src="images/{{img_path}}" height="400px" width="400px">
+	<h2>  Prediction   : <i> {{prediction}} </i></h2>
+
+	{% endif %}
+
+</div>
+
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6210"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Made and Developed by:<br>Jaskaran Singh Purewal<br>Contact: jaskaransinghpurewal7@gmail.com
+        </p>
+      </div></footer>  
+</body></html>
